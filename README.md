@@ -15,14 +15,9 @@ import { performThreadedDownload } from 'react-native-threaded-downloader';
 
 // ...
 
-async function performDownload() {
-  try {
-    const htmlResponse = await performThreadedDownload("https://example.com/", 60);
-    console.log(htmlResponse);
-  } catch (e) {
-    console.dir(e);
-  }
-}
+performThreadedDownload("https://example.com/", 60)
+  .then((response) => console.log(response))
+  .catch((e) => console.dir(e));
 ```
 
 ## Contributing
