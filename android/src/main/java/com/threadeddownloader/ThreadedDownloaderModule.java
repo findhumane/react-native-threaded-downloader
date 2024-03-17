@@ -29,6 +29,8 @@ public class ThreadedDownloaderModule extends ReactContextBaseJavaModule {
   private static final int DEFAULT_MAX_THREADS = 10;
   private static final String NEWLINE = System.lineSeparator();
 
+  private ExecutorService executorService;
+  
   public ThreadedDownloaderModule(ReactApplicationContext reactContext) {
     super(reactContext);
   }
