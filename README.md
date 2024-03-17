@@ -1,6 +1,6 @@
 # react-native-threaded-downloader
 
-Perform HTTP requests on separate native asynchronous threads and then call back to a promise
+Perform HTTP requests on separate native asynchronous threads and then call back to a promise.
 
 ## Installation
 
@@ -11,11 +11,18 @@ npm install react-native-threaded-downloader
 ## Usage
 
 ```js
-import { multiply } from 'react-native-threaded-downloader';
+import { performThreadedDownload } from 'react-native-threaded-downloader';
 
 // ...
 
-const result = await multiply(3, 7);
+async function performDownload() {
+  try {
+    const htmlResponse = await performThreadedDownload("https://example.com/", 60);
+    console.log(htmlResponse);
+  } catch (e) {
+    console.dir(e);
+  }
+}
 ```
 
 ## Contributing
