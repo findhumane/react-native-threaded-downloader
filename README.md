@@ -13,8 +13,7 @@ npm install react-native-threaded-downloader
 ```js
 import { performThreadedDownload } from 'react-native-threaded-downloader';
 
-// ...
-
+// First argument is the URL and second argument is the timeout in seconds
 performThreadedDownload("https://example.com/", 60)
   .then((response) => console.log(response))
   .catch((e) => console.dir(e));
