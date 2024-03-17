@@ -30,7 +30,7 @@ public class ThreadedDownloaderModule extends ReactContextBaseJavaModule {
   private static final String NEWLINE = System.lineSeparator();
 
   private ExecutorService executorService;
-  
+
   public ThreadedDownloaderModule(ReactApplicationContext reactContext) {
     super(reactContext);
   }
@@ -62,7 +62,7 @@ public class ThreadedDownloaderModule extends ReactContextBaseJavaModule {
       }
     }
 
-    DownloaderThread downloader = new DownloaderThread(url, promise);
+    DownloaderThread downloader = new DownloaderThread(url, timeoutSeconds, promise);
     executorService.execute(downloader);
   }
 
