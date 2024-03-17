@@ -17,9 +17,6 @@ const ThreadedDownloader = NativeModules.ThreadedDownloader
       }
     );
 
-export function performThreadedDownload(
-  url: string,
-  timeoutSeconds: Number
-): Promise<string> {
+export function performThreadedDownload(url: string, timeoutSeconds: Number): Promise<string> {
   return ThreadedDownloader.performThreadedDownload(url, timeoutSeconds);
 }
