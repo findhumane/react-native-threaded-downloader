@@ -19,6 +19,8 @@ performThreadedDownload("https://example.com/", 60)
   .catch((e) => console.dir(e));
 ```
 
+See [the example](example/src/App.tsx) for details.
+
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
