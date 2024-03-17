@@ -1,6 +1,6 @@
 {
   "name": "react-native-threaded-downloader",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Perform HTTP requests on separate native asynchronous threads and then call back to a promise",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
