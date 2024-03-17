@@ -44,7 +44,6 @@ android.iml
 #
 example/ios/Pods
 example/ios/.xcode.env.local
-example/ios/Podfile.lock
 example/ios/ThreadedDownloaderExample.xcworkspace/xcuserdata
 
 
